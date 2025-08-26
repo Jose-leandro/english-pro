@@ -145,3 +145,5 @@ export default function LandingMinimal() {
     </main>
   );
 }
+
+export const dynamic = "force-dynamic";
