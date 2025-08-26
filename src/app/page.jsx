@@ -17,6 +17,8 @@ const beneficios = [
   { title: "Material exclusivo incluso", icon: BookOpen },
 ];
 
+export const dynamic = "force-dynamic";
+
 export default function LandingMinimal() {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -145,5 +147,3 @@ export default function LandingMinimal() {
     </main>
   );
 }
-
-export const dynamic = "force-dynamic";
