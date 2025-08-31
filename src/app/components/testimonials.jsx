@@ -62,17 +62,22 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.05 }}
-            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md dark:bg-slate-900 dark:border-slate-600"
           >
             <div
               className="flex items-center gap-2 text-amber-500"
               aria-label={`${t.rating} estrelas`}
             >
               {Array.from({ length: t.rating }).map((_, idx) => (
-                <StarIcon key={idx} className="w-4 h-4 text-amber-500" />
+                <StarIcon
+                  key={idx}
+                  className="w-4 h-4 text-amber-500 dark:text-amber-700"
+                />
               ))}
             </div>
-            <blockquote className="mt-3 text-slate-700">“{t.quote}”</blockquote>
+            <blockquote className="mt-3 text-slate-700 dark:text-white">
+              “{t.quote}”
+            </blockquote>
             <figcaption className="mt-4 flex items-center gap-3 text-sm text-slate-500">
               <Image
                 src={t.photo}
@@ -82,8 +87,10 @@ export default function Testimonials() {
                 className="rounded-full"
               />
               <div>
-                <span className="font-semibold text-slate-700">{t.name}</span> •{" "}
-                <span>{t.role}</span>
+                <span className="font-semibold text-slate-700 dark:text-white">
+                  {t.name}
+                </span>{" "}
+                • <span className="dark:text-white">{t.role}</span>
                 <div className="flex justify-between items-start w-auto">
                   <p className="text-blue-600 font-medium">
                     <t.icon className="w-5 h-5 inline" /> {t.benefit}

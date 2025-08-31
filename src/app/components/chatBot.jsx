@@ -48,7 +48,7 @@ export default function Chatbot() {
 
       {/* Caixa de Chat */}
       {showChat && (
-        <div className="fixed bottom-20 right-5 w-80 bg-white border rounded-2xl shadow-xl flex flex-col overflow-hidden">
+        <div className="fixed bottom-20 right-5 w-80 bg-white border rounded-2xl shadow-xl flex flex-col overflow-hidden dark:bg-slate-800 dark:border-slate-600">
           <div className="bg-slate-600 text-white p-3 font-semibold">
             English Pro - Chat
           </div>
@@ -58,8 +58,8 @@ export default function Chatbot() {
                 key={i}
                 className={`p-2 rounded-lg max-w-[80%] ${
                   msg.from === "bot"
-                    ? "bg-gray-100 text-gray-900 self-start"
-                    : "bg-slate-200 text-black self-end ml-auto"
+                    ? "bg-gray-100 text-gray-900 self-start dark:bg-slate-700 dark:text-white"
+                    : "bg-slate-200 text-black self-end ml-auto dark:bg-slate-900 dark:text-white"
                 }`}
               >
                 {msg.text}
@@ -69,7 +69,7 @@ export default function Chatbot() {
           <div className="p-2 border-t flex gap-2">
             <input
               type="text"
-              className="flex-1 border rounded-lg px-2 py-1 text-sm"
+              className="flex-1 border rounded-lg px-2 py-1 text-sm dark:active:border-slate-700"
               placeholder="Digite sua mensagem..."
               value={input}
               onChange={(e) => setInput(e.target.value)}

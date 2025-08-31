@@ -55,7 +55,7 @@ export default function Integrations() {
       <h2 className="text-2xl md:text-3xl font-extrabold text-center">
         Integrações que melhoram sua experiência de aprendizado
       </h2>
-      <p className="text-center text-slate-600 mt-2 max-w-2xl mx-auto">
+      <p className="text-center text-slate-600 mt-2 max-w-2xl mx-auto dark:text-slate-400">
         Ferramentas modernas que tornam suas aulas mais organizadas, rápidas e
         interativas. Cada recurso foi pensado para facilitar seu estudo e
         acelerar sua evolução no inglês.
@@ -65,11 +65,13 @@ export default function Integrations() {
         {integrations.map((i, idx) => (
           <div
             key={idx}
-            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow duration-300 dark:bg-slate-800 dark:border-slate-600"
           >
             <i.icon className="w-6 h-6 text-blue-500" />
             <h3 className="mt-4 font-semibold text-lg">{i.title}</h3>
-            <p className="mt-2 text-sm text-slate-600">{i.desc}</p>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+              {i.desc}
+            </p>
             {i.proof && (
               <div className="mt-3 flex items-center gap-1 text-xs text-green-600 font-medium">
                 <StarIcon className="w-4 h-4" />

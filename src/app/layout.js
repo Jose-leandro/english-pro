@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/next";
+import { ThemeProvider } from "next-themes";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -37,11 +38,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <div className="from-slate-50 to-white text-slate-900 min-h-screen bg-gradient-to-b dark:from-slate-800 dark:to-slate-900 dark:text-slate-100">
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
       <Analytics />
     </html>
