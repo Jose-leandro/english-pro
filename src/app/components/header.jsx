@@ -1,6 +1,7 @@
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 export default function Header() {
   const { theme, systemTheme, setTheme } = useTheme();
@@ -12,7 +13,16 @@ export default function Header() {
     <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-200 dark:bg-slate-900/70 dark:border-slate-600">
       <nav className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <BookOpen className="w-6 h-6" />
+          <Image
+            src={
+              theme === "dark"
+                ? "/icons8-open-book-481-ezgif.com-optiwebp.webp"
+                : "/icons8-livro-aberto-48-ezgif.com-optiwebp.webp"
+            }
+            alt="English Pro"
+            width={28} // largura em pixels
+            height={28} // altura em pixels
+          />
           <span className="font-semibold">English Pro</span>
           <span className="ml-2 rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">
             Hello

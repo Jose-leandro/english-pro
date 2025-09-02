@@ -54,9 +54,9 @@ export default function Benefits() {
             {React.createElement(b.icon, {
               className: "w-6 h-6 dark:text-white",
             })}
-            <h3 className="mt-3 font-semibold text-lg dark:text-white">
+            <h2 className="mt-3 font-semibold text-lg dark:text-white">
               {b.title}
-            </h3>
+            </h2>
             <p className="mt-1 text-sm text-slate-600 dark:text-white">
               {b.desc}
             </p>

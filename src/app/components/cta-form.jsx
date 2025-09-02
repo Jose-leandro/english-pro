@@ -188,7 +188,7 @@ export default function CtaForm() {
             >
               <div className="rounded-2xl border border-slate-300 px-4 py-3 flex flex-col items-center justify-center gap-2 hover:shadow-sm text-center dark:border-slate-600 ">
                 <Calendar className="w-6 h-6 text-gray-700 dark:text-white" />
-                <h4 className="font-semibold">Agendamento fácil</h4>
+                <h3 className="font-semibold">Agendamento fácil</h3>
                 <p className="text-xs text-slate-600 dark:text-slate-400">
                   Marque sua aula gratuita em poucos cliques.
                 </p>
@@ -196,7 +196,7 @@ export default function CtaForm() {
 
               <div className="rounded-2xl border border-slate-300 px-4 py-3 flex flex-col items-center justify-center gap-2 hover:shadow-sm text-center dark:border-slate-600">
                 <Star className="w-6 h-6 text-gray-700  dark:text-white" />
-                <h4 className="font-semibold">Metodologia comprovada</h4>
+                <h3 className="font-semibold">Metodologia comprovada</h3>
                 <p className="text-xs text-slate-600 dark:text-slate-400">
                   English Pro: transforme seu inglês rapidamente.
                 </p>
@@ -204,9 +204,9 @@ export default function CtaForm() {
 
               <div className="rounded-2xl border border-slate-300 px-4 py-3 flex flex-col items-center justify-center gap-2 hover:shadow-sm text-center dark:border-slate-600">
                 <MessageCircle className="w-6 h-6 text-gray-700  dark:text-white" />
-                <h4 className="font-semibold  dark:text-white">
+                <h3 className="font-semibold  dark:text-white">
                   Contato direto com o professor
-                </h4>
+                </h3>
                 <p className="text-xs text-slate-600  dark:text-slate-400">
                   Tire dúvidas e receba orientações personalizadas.
                 </p>
@@ -219,7 +219,7 @@ export default function CtaForm() {
           id="contact"
           className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:bg-slate-900 dark:border-slate-600"
         >
-          <h3 className="text-xl font-extrabold">Fale com o Prof. Alex</h3>
+          <h2 className="text-xl font-extrabold">Fale com o Prof. Alex</h2>
           <p className="mt-1 text-sm text-slate-600 dark:text-white">
             Formulário enxuto para conversão máxima.
           </p>
