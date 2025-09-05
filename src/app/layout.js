@@ -160,6 +160,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="from-slate-50 to-white text-slate-900 min-h-screen bg-gradient-to-b dark:from-slate-800 dark:to-slate-900 dark:text-slate-100">
             {children}
+            <Analytics />
           </div>
         </ThemeProvider>
       </body>
